@@ -20,9 +20,6 @@ def is_ignored(name):
             return True
 
 
-print(IGNORES)
-
-
 def catalogue():
     skipped = set()
     for dirpath, dirnames, filenames in os.walk("."):

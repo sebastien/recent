@@ -5,7 +5,16 @@ import time
 import fnmatch
 
 
-IGNORES = [".git"]
+IGNORES = [
+    ".git",
+    "__pycache__",
+    ".cache",
+    "build",
+    "dist",
+    "*.pyc",
+    "node_modules",
+    "venv",
+]
 
 for path in [os.path.join(os.getenv("HOME"), ".gitignore"), ".gitignore"]:
     if os.path.exists(path):
